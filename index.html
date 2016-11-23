@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<h1 id="title"  text-align="center">Employee Database</h1> 
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="node.js"></script>
+		<table id="E_Table" border=1px>
+            <tr id="id" type="number"></tr>
+            <tr id="name" type="string"></tr>
+			<tr id="surname" type="string"></tr>
+			<tr id="level" type="number"></tr>
+			<tr id="salary" type="number"></tr>
+        </table>
+		
+		 ID:<input id="ID_Emp" type="string" value="" ></input>
+        <button type="button" onClick="AddData()" id="btnInvia">Cerca</button>
+		<button type="button" onClick="" id="btnInvia">Cancella</button>
+		<button type="button" onClick="showForm()">Aggiungi operaio</button>
+        
+        <form style="display:none;" id="add_form" name="add_form">
+            Name:<input id="N_Emp" type="string" value="" ></input>
+			Surname:<input id="Sur_Emp" type="string" value="" ></input>
+			Level:<input id="Lvl_Emp" type="number" value="" ></input>
+			Salary:<input id="S_Emp" type="number" value="" ></input>
+            <button type="button" onClick="">Invia</button>
+        </form>
+		
+	</body>
+</html>
